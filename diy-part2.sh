@@ -15,7 +15,7 @@ sed -i 's/192.168.1.1/192.168.10.12/g' package/base-files/files/bin/config_gener
 sed -i 's/192.168.1.1/192.168.10.12/g' package/base-files/luci2/bin/config_generate
 
 # 设置默认主题
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci-light/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argone/g' feeds/luci/collections/luci-light/Makefile
 
 # Modify hostname
 # sed -i 's/istoreos/P3TERX-Router/g' package/base-files/files/bin/config_generate
@@ -36,7 +36,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-
 git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git luci-app-argon-config
 
 # 取消主题默认设置
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+#sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 #find package/luci-theme-*/ -type f -name '*luci-theme-*' -print -exec sed -i '/set luci.main.mediaurlbase/d' {} \;
 
 # 调整 Docker 到 服务 菜单
