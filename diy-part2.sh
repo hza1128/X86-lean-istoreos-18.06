@@ -32,7 +32,7 @@ orig_version=$(cat "package/lean/default-settings/files/zzz-default-settings" | 
 sed -i "s/${orig_version}/R${date_version} by hza800755/g" package/lean/default-settings/files/zzz-default-settings
 
 # 添加插件
-git clone --depth=1 -b master https://github.com/jerrykuku/luci-app-argon package/luci-app-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
 git clone --depth=1 -b master https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 #删除重复插件
