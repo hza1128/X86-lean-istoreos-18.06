@@ -17,4 +17,4 @@
 
 # 添加软件源
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-sed -i '$a src-git smpackage https://github.com/xuanranran/openwrt-packages' feeds.conf.default
+# sed -i '$a src-git smpackage https://github.com/xuanranran/openwrt-packages' feeds.conf.default
