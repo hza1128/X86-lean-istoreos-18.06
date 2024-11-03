@@ -36,7 +36,8 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-
 git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git luci-app-argon-config
 
 # 取消主题默认设置
-find package/luci-theme-*/ -type f -name '*luci-theme-*' -print -exec sed -i '/set luci.main.mediaurlbase/d' {} \;
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+#find package/luci-theme-*/ -type f -name '*luci-theme-*' -print -exec sed -i '/set luci.main.mediaurlbase/d' {} \;
 
 # 调整 Docker 到 服务 菜单
 sed -i 's/"admin"/"admin", "services"/g' feeds/luci/applications/luci-app-dockerman/luasrc/controller/*.lua
