@@ -14,6 +14,9 @@
 sed -i 's/192.168.1.1/192.168.10.12/g' package/base-files/files/bin/config_generate
 sed -i 's/192.168.1.1/192.168.10.12/g' package/base-files/luci2/bin/config_generate
 
+# 移除要替换的包+
+rm -rf feeds/luci/themes/luci-theme-argon
+
 # Modify hostname
 # sed -i 's/istoreos/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
@@ -29,8 +32,8 @@ orig_version=$(cat "package/lean/default-settings/files/zzz-default-settings" | 
 sed -i "s/${orig_version}/R${date_version} by hza800755/g" package/lean/default-settings/files/zzz-default-settings
 
 # 主题插件
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git luci-app-argon-config
+git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 # 取消主题默认设置
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
