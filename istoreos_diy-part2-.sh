@@ -27,7 +27,8 @@ git_sparse_clone master https://github.com/kiddin9/kwrt-packages luci-app-passwa
 
 
 # Modify hostname
-# sed -i 's/istoreos/P3TERX-Router/g' package/base-files/files/bin/config_generate
+# 修改主机名
+sed -i 's/openwrt/istoreos/g' package/base-files/files/bin/config_generate
 
 # x86 型号只显示 CPU 型号
 sed -i 's/${g}.*/${a}${b}${c}${d}${e}${f}${hydrid}/g' package/lean/autocore/files/x86/autocore
