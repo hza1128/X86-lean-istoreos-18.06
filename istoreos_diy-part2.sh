@@ -18,12 +18,10 @@ sed -i 's/192.168.1.1/192.168.10.12/g' package/base-files/luci2/bin/config_gener
 rm -rf feeds/luci/themes/luci-theme-argon
 
 # 添加额外插件
-git_sparse_clone master https://github.com/kiddin9/kwrt-packages luci-app-store
-git_sparse_clone master https://github.com/kiddin9/kwrt-packages luci-lib-taskd
-git_sparse_clone master https://github.com/kiddin9/kwrt-packages luci-lib-xterm
-git_sparse_clone master https://github.com/kiddin9/kwrt-packages luci-app-quickstart
-git_sparse_clone master https://github.com/kiddin9/kwrt-packages luci-app-openclash
-git_sparse_clone master https://github.com/kiddin9/kwrt-packages luci-app-passwall
+#git_sparse_clone master https://github.com/kiddin9/kwrt-packages luci-app-store
+#git_sparse_clone master https://github.com/kiddin9/kwrt-packages luci-lib-xterm
+#git_sparse_clone master https://github.com/kiddin9/kwrt-packages luci-app-quickstart
+#git_sparse_clone master https://github.com/kiddin9/kwrt-packages luci-app-passwall
 
 
 # Modify hostname
