@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: lean-18.06
+name: lean-x86-18.06
 
 on:
   repository_dispatch:
