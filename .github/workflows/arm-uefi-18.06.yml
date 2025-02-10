@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: istoreos-arm-18.06
+name: arm-uefi-18.06
 
 on:
   repository_dispatch:
