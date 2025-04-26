@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: lean-istoreos-plus
+name: lean-istoreos-p
 
 on:
   repository_dispatch:
