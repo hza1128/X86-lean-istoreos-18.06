@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: lean-x86-istoreos-18.06
+name: lean-istoreos-lite
 
 on:
   repository_dispatch:
