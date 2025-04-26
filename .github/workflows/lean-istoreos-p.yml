@@ -8,7 +8,7 @@
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
-# 此为istoreos官方配置文件
+# 此istoreos-p.config为istoreos官方配置文件
 
 name: lean-istoreos-p
 
@@ -27,7 +27,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: istoreos-plus.config
+  CONFIG_FILE: istoreos-p.config
   DIY_P1_SH: istoreos_diy-part1.sh
   DIY_P2_SH: istoreos_diy-part2.sh
   UPLOAD_BIN_DIR: false
