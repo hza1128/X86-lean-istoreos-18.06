@@ -22,5 +22,3 @@
 #echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
 #echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
 sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
-#sed -i '$a src-git kiddin9 https://github.com/kiddin9/kwrt-packages' feeds.conf.default
-
